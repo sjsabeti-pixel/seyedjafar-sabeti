@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قهوه خانه لیالی نجف</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: 'badkhat';
+        src: url('https://www.fontyab.com/css/fonts/persian-badkhat2.eot');
+        src: url('https://www.fontyab.com/css/fonts/persian-badkhat2.eot?#iefix') format('embedded-opentype'),
+             url('https://www.fontyab.com/css/fonts/persian-badkhat2.woff2') format('woff2'),
+             url('https://www.fontyab.com/css/fonts/persian-badkhat2.woff') format('woff'),
+             url('https://www.fontyab.com/css/fonts/persian-badkhat2.ttf') format('truetype');
+        font-weight: normal;
+      }
+      body {
+        font-family: 'badkhat', cursive;
+      }
+      /* Simple pulsing animation for winning */
+      @keyframes pulse-win {
+        0%, 100% {
+          box-shadow: 0 0 15px 5px rgba(45, 212, 191, 0.7);
+        }
+        50% {
+          box-shadow: 0 0 30px 15px rgba(45, 212, 191, 0.3);
+        }
+      }
+      .animate-pulse-win {
+        animation: pulse-win 2s infinite;
+      }
+      
+      /* Gold pulsing animation for text */
+      @keyframes pulse-gold {
+        0%, 100% {
+          text-shadow: 0 0 8px rgba(251, 191, 36, 0.7), 0 0 16px rgba(251, 191, 36, 0.4);
+        }
+        50% {
+          text-shadow: 0 0 16px rgba(251, 191, 36, 1), 0 0 32px rgba(251, 191, 36, 0.6);
+        }
+      }
+      .animate-pulse-gold {
+        animation: pulse-gold 1.5s infinite;
+      }
+
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
